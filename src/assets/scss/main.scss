@@ -1,0 +1,47 @@
+/*
+ 写一个通用样式表
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $bodyFont;
+  font-size: $bodyFontSize;
+  color: $bodyColor;
+  background-color: $bodyBg;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*
+ 左右浮动和清除浮动
+*/
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
